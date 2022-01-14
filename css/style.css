@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: spectral, sans-serif;
+  background: #FAFAFA;
+  font-size: 16px;
+}
+
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  /* color: #fff; */
+}
+
+p{
+    color: #18345E;
+    font-family: spectral;
+    text-align: center;
+}
+
+.container {
+  max-width: 98vw;
+  margin: 0 auto;
+  padding: 1rem;
+  /* background-color: #fff; */
+}
+
+.text-center {
+  text-align: left;
+  color: #18345E;
+  font-family: spectral;
+}
+
+.login .container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  position: relative;
+  top: 200px;
+  
+
+  /* justify-self: center;
+  align-items: center; */
+  /* border: 1px solid #ddd; */
+  border-radius: 0.25rem;
+  /* background-color: rgb(10, 10, 10); */
+}
+
+.input {
+  /* appearance: none;
+  display: block;
+  width: 100%;
+  color:#18345E;
+  border: 1px  rbg(180, 180, 180);
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.25rem; */
+  border: 1px;
+  border-bottom: 1px;
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  background: #F4F2F2;
+}
+
+.label{
+    color: #18345E;
+    font-size: smaller;
+}
+
+.button{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: #F0AB20;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.img{
+    position: relative;
+    top: 240px;
+    left: 250px;
+}
+
+
+.img h1{
+    text-align: center;
+    font-family: spectral;
+}
+
+.img p{
+    margin-top: 2px;
+    color: #fff;
+}
