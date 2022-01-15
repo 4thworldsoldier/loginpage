@@ -24,7 +24,7 @@ class Login {
                     email: document.querySelector(`#email`).value,
                     password: document.querySelector(`#password`).value,
                 };
-                fetch("https://localhost:44344/Users/authenticate",{
+                fetch("https://signinlogin.azurewebsites.net/users/authenticate",{
                     method:"POST",
                     body:JSON.stringify(data),
                     headers:{
