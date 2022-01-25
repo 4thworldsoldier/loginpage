@@ -80,7 +80,7 @@ class Login {
     //                     }else {
     //                         this.setStatus(
     //                             field,
-    //                             `${field.previousElementSibling.innerText} must be at least 8 characters`,
+    //                             `${field.previousElementSibling.innerText} invalid email format`,
     //                             "error"
     //                         );
     //                         return false;
@@ -104,7 +104,7 @@ class Login {
 			return false;
 		} else {
 			if (field.type == "password") {
-				if (field.value.length < 8) {
+				if (field.value.length < 8){
 					this.setStatus(
 						field,
 						`${field.previousElementSibling.innerText} must be at least 8 characters`,
@@ -116,8 +116,25 @@ class Login {
 					return true;
 				}
 			} else {
-				this.setStatus(field, null, "success");
+				// if (field.type == "email") {
+                //         if (field.value  && /(^\w.*@\w+\.\w)/.test(field.value)) {
+                //             this.setStatus(field, null, "success");
+                //             return true;
+                //         }else{
+                //          this.setStatus(
+                //                 field,
+                //                 `${field.previousElementSibling.innerText} invalid email format`,
+                //                 "error"
+                //             );
+                //             return false;							
+				// 		}					
+				// } else{
+			    //    this.setStatus(field, null, "success");	
+                //   return true;
+				// }
+				this.setStatus(field,null,"success");
 				return true;
+
 			}
 		}
 	}
